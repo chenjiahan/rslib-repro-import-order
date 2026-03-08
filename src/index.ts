@@ -1,4 +1,4 @@
 import "./check";
-import { styleText } from "node:util";
+import * as util from "node:util";
 
-console.log(styleText);
+console.log(util.styleText);
