@@ -14,11 +14,13 @@
   ],
   "scripts": {
     "build": "rslib build",
+    "build:esbuild": "esbuild --bundle --platform=node --outfile=dist-esbuild/index.js ./src/index.ts --format=esm",
     "dev": "rslib build --watch"
   },
   "devDependencies": {
     "@rslib/core": "^0.19.6",
     "@types/node": "^24.12.0",
+    "esbuild": "^0.27.3",
     "typescript": "^5.9.3"
   }
 }
